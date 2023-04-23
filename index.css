@@ -1,0 +1,250 @@
+/* Main Format */
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Sub Format */
+
+.page {
+  background-color: hsl(212, 22%, 14%);
+  height: 26rem;
+  width: 23rem;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem 0;
+}
+
+.imageCard {
+  width: 100%;
+  display: flex;
+  padding-top: 1.3rem;
+}
+
+.bigText {
+  width: 100%;
+}
+
+.smallText {
+  width: 100%;
+  line-height: 1.7rem;
+}
+
+.numberCard {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0;
+  padding-bottom: 2rem;
+}
+
+input {
+  border: 0;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+}
+
+input:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.image,
+.number {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image, .darkGrey{
+    background-color: hsl(213, 19%, 18%);
+}
+
+.lightGrey{
+  background-color:hsl(217, 12%, 63%);
+}
+
+button {
+  width: 23rem;
+  border-left: 20rem;
+  height: 2.8rem;
+  border-radius: 25px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  font-family: "Overpass", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.button,
+.numberCard {
+  padding-bottom: 1rem;
+}
+
+.number:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.success {
+  background-color: hsl(212, 22%, 14%);
+  height: 26rem;
+  width: 25rem;
+  border-radius: 30px;
+  display: none;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem 0;
+}
+
+.successP {
+  text-align: center;
+  margin-top: 0;
+  padding: 0 1.8rem 0;
+}
+
+.success h2 {
+  margin-top: 0;
+}
+
+.success p {
+  font-size: 0.9rem;
+}
+
+.successImg {
+  padding-top: 2rem;
+}
+
+.successNumber span,
+.successNumber p {
+  color: hsl(25, 97%, 53%);
+  margin: 0;
+}
+
+.successNumber {
+  width: 13rem;
+  border-left: 20rem;
+  height: 2rem;
+  border-radius: 25px;
+  background-color: hsl(213, 19%, 18%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Text mods */
+
+h2 {
+  font-family: "Overpass", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+  color: hsl(217, 12%, 63%);
+}
+
+@media (max-width: 375px) {
+
+  .page,
+  .success {
+    width: 18rem;
+    margin: 0 1rem;
+    padding: 0 1.5rem;
+    height: auto;
+    border-radius: 13px;
+  }
+
+  .successImg {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  p {
+    font-family: "Overpass", sans-serif;
+    color: hsl(217, 12%, 63%);
+    font-size: 0.9rem;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .successP {
+    padding: 0 0 2rem 0 ;
+  }
+
+  .image,
+  .number {
+    height: 42px;
+    width: 42px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  p.smallText {
+    padding: 0.9rem 0 1.8rem 0;
+  }
+
+  .smallText {
+    line-height: 1.5rem;
+  }
+
+  .imageCard {
+    padding-top: 1.1rem;
+  }
+
+  .inputs {
+    padding-bottom: 1.4rem;
+  }
+
+  .button {
+    padding-bottom: 1rem;
+  }
+  .numberCard{
+    padding: 1.5rem 0 1rem 0;
+  }
+  .successNumber {
+    margin-bottom: 1.5rem;
+}
+.success h2 {
+    padding-bottom: 1rem;
+}
+}
