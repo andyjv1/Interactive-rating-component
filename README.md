@@ -33,8 +33,8 @@ Users should be able to:
 ![](./screenshots/Screen%20Shot%202.png)
 ### Links
 
-- Solution URL: [Solution](https://github.com/andyjv1/Product-preview-card-component.git)***
-- Live Site URL: [Live](https://andyjv1.github.io/Product-preview-card-component/)***
+- Solution URL: [Solution](https://github.com/andyjv1/Interactive-rating-component.git)
+- Live Site URL: [Live](https://andyjv1.github.io/Interactive-rating-component/)
 
 ## My process
 
@@ -44,6 +44,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Visual Studio Code
 - JS
 
 
