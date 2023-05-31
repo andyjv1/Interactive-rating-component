@@ -22,22 +22,21 @@ body {
   padding: 0 2rem 0;
 }
 
-.imageCard {
+.page-image {
   width: 100%;
   display: flex;
   padding-top: 1.3rem;
 }
 
-.bigText {
+.page h1 {
   width: 100%;
 }
-
-.smallText {
+.page p {
   width: 100%;
   line-height: 1.5rem;
 }
 
-.numberCard {
+.page-numbers {
     width: 21.313rem;
     margin: 0;}
 
@@ -45,7 +44,7 @@ form {
   width: 100%;
 }
 
-.inputs {
+form > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -65,22 +64,22 @@ input:hover {
   cursor: pointer;
 }
 
-.image,
-.number {
+.page-image > div,
+form > div > input {
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.number {
+form > div > input {
   height: 51px;
   width: 51px;
 }
-.image {
+.page-image > div {
   height: 48px;
   width: 48px;
 }
-.image, .darkGrey{
+.page-image > div, .darkGrey{
     background-color: hsl(213, 19%, 18%);
 }
 
@@ -107,12 +106,12 @@ button:hover {
   cursor: pointer;
 }
 
-.button,
-.numberCard {
+form,
+.page-numbers {
   padding-bottom: 1rem;
 }
 
-.number:hover {
+form > div > input:hover {
   background-color: hsl(25, 97%, 53%);
   cursor: pointer;
 }
@@ -129,7 +128,7 @@ button:hover {
   padding: 0 2rem 0;
 }
 
-.successP {
+.success-appreciate {
   text-align:center;
   margin-top: 0;
   padding: 0 0.25rem 0;
@@ -138,12 +137,12 @@ button:hover {
 }
 
 
-.successImg {
+.success-image {
   padding-top: 2rem;
 }
 
 
-.successNumber {
+.success-selected {
   width: 12.06rem;
   border-left: 20rem;
   height: 2rem;
@@ -157,10 +156,10 @@ button:hover {
 
 /* Text mods */
 
-h2 {
+h1 {
   font-family: "Overpass", sans-serif;
   color: white;
-    font-size: 34px;
+    font-size: 1.75rem;
   font-weight: 200;
   margin-bottom: 0;
 }
@@ -168,6 +167,7 @@ h2 {
 p {
   font-family: "Overpass", sans-serif;
   color: hsl(217, 12%, 63%);
+      font-size: 0.9375em;
 }
 
 .success h2 {
@@ -179,8 +179,8 @@ p {
 .success p {
   font-size: 0.9rem;
 }
-.successNumber span,
-.successNumber p {
+.success-selected span,
+.success-selected p {
   color: hsl(25, 97%, 53%);
   margin: 0;
 }
@@ -195,7 +195,7 @@ p {
     border-radius: 13px;
   }
 
-  .successImg {
+  .success-image {
     padding: 2rem 0 1.5rem 0;
         width: 9rem;
   }
@@ -212,16 +212,16 @@ p {
         line-height: 1.53rem;
   }
 
-  .successP {
+  .success-appreciate {
     padding: 0 0 2.48rem 0;
   }
 
-  .image {
+  .page-image > div {
     height: 40px;
     width: 40px;
   }
  
-  .number {
+  form > div > input {
     height: 42px;
     width: 42px;
   }
@@ -231,31 +231,31 @@ p {
     margin: 1rem 0 1.17rem 0;
   }
 
-  p.smallText {
+  .page p {
     padding: 0.9rem 0 1.8rem 0;
   }
 
-  .smallText {
+.page p {
     line-height: 1.5rem;
   }
 
-  .imageCard {
+  .page-image {
     padding-top: 1.5rem;
   }
 
-  .inputs {
+  form > div {
     padding-bottom: 1.4rem;
   }
 
-  .button {
+  form {
     padding-bottom: 1rem;
   }
-  .numberCard{
+  .page-numbers{
     padding: 1.1rem 0 1rem 0;
         width: 17.44rem;
 
   }
-  .successNumber {
+  .success-selected {
     margin-bottom: 1.5rem;
         width: 10.5rem;
 

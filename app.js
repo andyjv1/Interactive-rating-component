@@ -18,14 +18,16 @@ btns.forEach(btn => btn.addEventListener("click", () => {
         }
     }
     )
-})
-)
-
-form.addEventListener('submit', function (e) {
+    
+    form.addEventListener('submit', function (e) {
     e.preventDefault();
     page.style.display = "none";
     success.style.display = "flex";
     spanNumber.innerText = numberValue
     form.reset();
 });
+})
+)
+
+
 
